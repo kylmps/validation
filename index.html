@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html  lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EVENT FORM VALIDATION</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        
+
+        <div class="solid">
+<form>
+        
+
+<span class="tab">
+    
+    <br>
+        <label for="inType">Event Type:</label>
+        <select name="outType" id = "inType" required>
+          <option value = "1">Choose One . . .</option>
+          <option value = "2">local</option>
+          <option value = "3">continental</option>
+          <option value = "4">international</option>
+        </select><br>
+
+
+        <label for ="inTitle" >Event Title:      </label>
+        <input type = "text" style="width:80%" name = "outTitle" id = "inTitle" required><br/>        
+
+        <label for ="inDateStart">Event Dates:       </label>
+        <input type = "date" name = "outDateStart" id = "inDateStart" required>
+        <input type = "date" name = "outDateEnd" id = "inDateEnd" required>
+        <br/>
+
+
+        <label for ="inPostDate">Posting Date:       </label>
+        <input type = "date" name = "outPostDate" id = "inPostDate" required><br>
+        
+        
+        <input type="checkbox" id="inRegRequire" name="outRegRequire" value="True">
+        <label for="eRegReq">Is Registration Requierd?</label><br>        
+
+        <input type="checkbox" id="inFamAssoProg" name="outFamAssoProg" value="True">
+        <label for="eFamAssoc">Is this event associated with any Family Programs</label><br> 
+
+        <input type="checkbox" id="inAutomail" name="outAutomail" value="True">
+        <label for="eAutomail">Upon Registration Completion, Are Users to Receive an Auto Generated Email?</label><br> 
+
+        <input type="checkbox" id="inPointOfContact" name="outPointOfContact" value="True">
+        <label for="inPointOfContact">Is There a Point of Contact</label><br> 
+
+        <input type="checkbox" id="inHostingCommandPOC" name="outHostingCommandPOC" value="True">
+        <label for="inHostingCommandPOC">Is There a Hosting Command Point of Contact</label><br>
+  <br><br>
+
+        <input onclick="validate()" type="submit" value="Save">
+        <input type="button" value="Cancel"><br>
+
+    </form>
+        
+</span>
+       
+        </div>
+    </body>
+</html>
